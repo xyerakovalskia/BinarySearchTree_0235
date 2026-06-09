@@ -40,3 +40,14 @@ public:
         node *currentnode = NULL;
 
         search(element, parent, currentnode);
+
+        if (parent == NULL)
+        {
+            root = newnode;
+            return;
+        }
+
+        if(element < parent->info)
+        {
+            parent->leftchild = newnode;
+        }
