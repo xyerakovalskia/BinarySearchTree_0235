@@ -63,3 +63,7 @@ public:
     {
         currentnode = root;
         parent = NULL;
+
+        while (currentnode != NULL && currentnode->info != element)
+        {
+            parent = currentnode;
