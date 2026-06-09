@@ -106,3 +106,6 @@ public:
             preorder(ptr->rightchild);
         }
     }
+
+    void postorder(node *ptr)
+    {
